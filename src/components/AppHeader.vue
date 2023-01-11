@@ -79,5 +79,21 @@ export default {
 </template> 
 
 <style lang="scss">
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
 
+header {
+    @include flex-beetween;
+
+    ul {
+        @include flex-beetween;
+
+    }
+}
+
+
+
+li {
+    margin: 0 10px
+}
 </style>

@@ -1,15 +1,22 @@
 <script>
 export default {
-  
+
 }
 </script>
 
 <template lang="">
-<div>
-
-</div>
+<main>
+  <p>lorem</p>
+</main>
 </template>
 
-<style lang="">
+<style lang="scss">
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
 
+main {
+
+    background-color: black;
+    height: 200px;
+}
 </style>

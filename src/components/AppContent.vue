@@ -1,6 +1,6 @@
 <script>
 import AppCard from './AppCard.vue';
-import dataItems from '../assets/data/dc-comics.json;'
+import dataItems from '../assets/data/dataItems'
 
 export default {
     components: {
@@ -19,23 +19,35 @@ export default {
 
 <template lang="">
 <main>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure totam magnam perspiciatis quis magni, deserunt distinctio explicabo saepe iste, neque sequi sit! Rerum dignissimos, nisi commodi incidunt corrupti ducimus fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptatum provident, iste nihil at officiis nisi unde asperiores facere sit incidunt mollitia magnam enim suscipit harum commodi distinctio. Laborum. </p>
 
-  <AppCard />
-  <AppCard />
+<div class="container">
+    <div class="row">
+
+       <AppCard  v-for="(item3, index3) in card_dc" :card_dc= "item3" :poster="image-poster" />
+   </div>
+</div>
+
 
 </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 
 main {
 
     background-color: black;
-    height: 200px;
     padding: $paddingSemantic;
     color: white;
+}
+
+
+.container {}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 </style>

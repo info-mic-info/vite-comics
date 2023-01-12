@@ -23,6 +23,7 @@ h1 {
 .card {
     margin: 10px 0;
     width: calc(100% / 6);
+    text-align: center;
 
     img {
         width: 300px;

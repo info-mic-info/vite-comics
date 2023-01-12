@@ -27,6 +27,11 @@ export default {
    </div>
 </div>
 
+<div class="flex">
+<button class="btn"><h3>LOAD MORE</h3></button>
+</div>
+
+
 
 </main>
 </template>
@@ -42,12 +47,20 @@ main {
     color: white;
 }
 
-
-.container {}
-
 .row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.btn {
+    background-color: $primary;
+    padding: 10px 30px;
+    border: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
 }
 </style>

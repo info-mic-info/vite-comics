@@ -114,7 +114,7 @@ export default {
             </li>
         </ul> 
 
-        
+         
     </nav>
 </div>
 <div class="logo_rotate">

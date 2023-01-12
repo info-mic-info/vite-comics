@@ -1,7 +1,7 @@
 <script>
 export default {
     props: {
-        cards: Object
+        card_dc: Object
     }
 }
 </script>
@@ -9,7 +9,7 @@ export default {
 
 <template lang="">
     <div>
-        <h1>{{cards.name}}</h1>
+        <h1></h1>
     </div>
 </template>
 <style lang="scss">

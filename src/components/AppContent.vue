@@ -1,22 +1,17 @@
 <script>
 import AppCard from './AppCard.vue';
+import dataItems from '../assets/data/dc-comics.json;'
 
 export default {
     components: {
         AppCard
+
     },
     data() {
         return {
-            card: {
-                name: 'prova',
-                cost: 'riprova'
 
-            },
-            card2: {
-                name: 'prova',
-                cost: 'riprova'
+            card_dc: dataItems,
 
-            }
         }
     }
 }
@@ -26,8 +21,8 @@ export default {
 <main>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure totam magnam perspiciatis quis magni, deserunt distinctio explicabo saepe iste, neque sequi sit! Rerum dignissimos, nisi commodi incidunt corrupti ducimus fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptatum provident, iste nihil at officiis nisi unde asperiores facere sit incidunt mollitia magnam enim suscipit harum commodi distinctio. Laborum. </p>
 
-  <AppCard :cards="card"/>
-  <AppCard :cards="card2"/>
+  <AppCard />
+  <AppCard />
 
 </main>
 </template>

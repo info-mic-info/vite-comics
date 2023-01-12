@@ -109,7 +109,7 @@ export default {
             <li v-for="(elem, index) in info" :key="index">
 
               <h4 :class="elem.active ? 'active' : ''">{{elem.Title}}</h4>
-              <p :class="elem.active ? 'active' : ''">{{elem.paragraf}}</p>
+              <p v-for="(elem2, index2) in elem.paragraf" :key="index2" :class="elem.active ? 'active' : ''">{{elem2}}</p>
 
             </li>
         </ul> 

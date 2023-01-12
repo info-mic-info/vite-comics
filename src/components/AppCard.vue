@@ -1,13 +1,15 @@
 <script>
 export default {
-
+    props: {
+        cards: Object
+    }
 }
 </script>
 
 
 <template lang="">
     <div>
-        <h1>APP CARD</h1>
+        <h1>{{cards.name}}</h1>
     </div>
 </template>
 <style lang="scss">

@@ -20,6 +20,11 @@ export default {
 <template lang="">
 <main>
 
+<div class="jumbotron">
+    <!-- <img src="src/assets/images/jumbotron.jpg" alt="">  -->
+</div>
+
+
 <div class="container">
     <div class="row">
 
@@ -43,8 +48,12 @@ export default {
 main {
 
     background-color: black;
-    padding: $paddingSemantic;
+
     color: white;
+}
+
+.container {
+    padding: $paddingSemantic;
 }
 
 .row {
@@ -62,5 +71,13 @@ main {
 .flex {
     display: flex;
     justify-content: center;
+    padding: $paddingSemantic;
+}
+
+.jumbotron {
+    height: 530px;
+    background-image: url("src/assets/images/jumbotron.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 </style>

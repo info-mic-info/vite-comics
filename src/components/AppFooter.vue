@@ -183,7 +183,9 @@ export default {
 
 .middle {
     background-image: url("../assets/images/footer-bg.jpg");
+    background-size: cover;
     color: $ligth;
+    background-position: right center;
     @include flex-beetween;
 
     .info {
@@ -203,13 +205,19 @@ export default {
     }
 }
 
+.logo_rotate {
+    img {
+        width: 400px;
+    }
+}
+
 .down {
     background-color: #303030;
     @include flex-beetween;
 
 
     .image img {
-        width: 20px;
+        width: 50px;
     }
 
     ul {
@@ -221,11 +229,13 @@ export default {
     }
 
     h3 {
+        margin: auto 0;
         border: solid 3px $primary;
         padding: 5px;
     }
 
     h4 {
+        margin: auto 10px;
         color: $primary
     }
 

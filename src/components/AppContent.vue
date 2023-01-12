@@ -47,7 +47,7 @@ export default {
 
 main {
 
-    background-color: black;
+    background-color: #1c1c1c;
     color: white;
     position: relative;
 }

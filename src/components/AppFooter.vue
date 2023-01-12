@@ -80,16 +80,16 @@ export default {
 </script>
 
 <template lang="">
-
+<footer>
 <!-- PARTE ALTA -->
 <section class="up">
     <nav>
         <ul>
             <li v-for="(elem, index) in menu" :key="index">
 
-                <div class="image">
-            <img :src="'/src/assets/images/' + elem.image" alt="">
-        </div>
+               <div class="image">
+                   <img :src="'/src/assets/images/' + elem.image" alt="">
+               </div>
      
                 <a :href="elem.url" :class="elem.active ? 'active' : ''">{{elem.label}}</a>
 
@@ -109,7 +109,7 @@ export default {
             <li v-for="(elem, index) in info" :key="index">
 
               <h4 :class="elem.active ? 'active' : ''">{{elem.Title}}</h4>
-              <p :class="elem.active ? 'active' : ''">{{elem.paragraf[1]}}</p>
+              <p :class="elem.active ? 'active' : ''">{{elem.paragraf}}</p>
 
             </li>
         </ul> 
@@ -143,6 +143,7 @@ export default {
         </ul> 
     </nav>
 </section>
+</footer>
 
 </template>
 
@@ -152,10 +153,13 @@ export default {
 
 
 
+
+
 .up,
 .middle,
 .down {
     padding: $universalPadding;
+    padding: $paddingSemantic;
 }
 
 
@@ -200,7 +204,7 @@ export default {
 }
 
 .down {
-    background-color: rgba(62, 57, 57, 0.565);
+    background-color: #303030;
     @include flex-beetween;
 
 
@@ -217,7 +221,8 @@ export default {
     }
 
     h3 {
-        border: solid 1px $primary
+        border: solid 3px $primary;
+        padding: 5px;
     }
 
     h4 {

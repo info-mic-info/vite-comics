@@ -83,6 +83,8 @@ export default {
 @use '../styles/partials/mixins' as *;
 
 header {
+    padding: $paddingSemantic;
+    // padding: $universalPadding;
     @include flex-beetween;
 
     ul {

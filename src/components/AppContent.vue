@@ -21,7 +21,7 @@ export default {
 <main>
 
 <div class="jumbotron">
-    <!-- <img src="src/assets/images/jumbotron.jpg" alt="">  -->
+<button class="btn"><h2>CURRENT SERIES</h2></button>
 </div>
 
 
@@ -48,8 +48,8 @@ export default {
 main {
 
     background-color: black;
-
     color: white;
+    position: relative;
 }
 
 .container {
@@ -66,6 +66,7 @@ main {
     background-color: $primary;
     padding: 10px 30px;
     border: none;
+    color: white;
 }
 
 .flex {
@@ -79,5 +80,13 @@ main {
     background-image: url("src/assets/images/jumbotron.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+
+    .btn {
+        position: absolute;
+        top: 515px;
+        left: 250px;
+
+    }
 }
 </style>

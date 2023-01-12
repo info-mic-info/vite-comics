@@ -67,9 +67,9 @@ export default {
     </a>
     <nav>
         <ul>
-            <li v-for="(elem, index) in menu" :key="index">
+            <li v-for="(elem, index) in menu" :key="index" :class="elem.active ? 'active' : ''">
 
-                <a :href="elem.url" :class="elem.active ? 'active' : ''">{{elem.label}}</a>
+                <a :href="elem.url" >{{elem.label}}</a>
 
         </li>
         </ul> 
@@ -84,18 +84,29 @@ export default {
 
 header {
     padding: $paddingSemantic;
-    // padding: $universalPadding;
     @include flex-beetween;
 
     ul {
         @include flex-beetween;
 
+        li.active {
+            color: $primary;
+            border-bottom: 5px solid $primary;
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+        li:hover {
+            border-bottom: 5px solid $primary;
+
+            a {
+                color: $primary;
+            }
+        }
+
+
     }
-}
-
-
-
-li {
-    margin: 0 10px
 }
 </style>
